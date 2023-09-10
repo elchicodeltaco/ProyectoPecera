@@ -38,4 +38,8 @@ public class PezAngel : MonoBehaviour
 
 
     }
+    private void Update()
+    {
+        ComportamientoAngel();
+    }
 }

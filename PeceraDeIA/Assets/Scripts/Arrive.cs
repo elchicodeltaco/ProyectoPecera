@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arrive : SteeringBase
+public class ArrivalAngel : SteeringBase
 {
     public Transform target;
     public float deceleration = 5f;

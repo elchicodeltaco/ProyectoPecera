@@ -12,13 +12,20 @@ public class OffsetPursuit : SteeringBase
 
     public override Vector3 CalcularSteering()
     {
-        Vector3 worldOffsetPos = PointToWorldSpace(offset, Lider.transform.up, Lider.transform.right, Lider.transform.up, Lider.transform.position);
-        Vector3 toOffset = worldOffsetPos - transform.position;
-        float lookAheadTime = toOffset.magnitude / (maxSpeed + Lider.GetComponent<Rigidbody>().velocity.magnitude);
+        if (Lider != null)
+        {
+            Vector3 worldOffsetPos = PointToWorldSpace(offset, Lider.transform.up, Lider.transform.right, Lider.transform.up, Lider.transform.position);
+            Vector3 toOffset = worldOffsetPos - transform.position;
+            float lookAheadTime = toOffset.magnitude / (maxSpeed + Lider.GetComponent<Rigidbody>().velocity.magnitude);
 
-        Vector3 steeringForce = Seek(worldOffsetPos + Lider.velocity * lookAheadTime, velocidad);
+            Vector3 steeringForce = Seek(worldOffsetPos + Lider.velocity * lookAheadTime, velocidad);
 
-        return steeringForce;
+            return steeringForce;
+        }
+        else
+        {
+            return Vector3.zero;
+        }
     }
 
     private Vector3 PointToWorldSpace(Vector3 point, Vector3 heading, Vector3 side, Vector3 up, Vector3 position)
