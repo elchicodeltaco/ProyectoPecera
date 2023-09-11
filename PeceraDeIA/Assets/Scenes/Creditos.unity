@@ -417,11 +417,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -697,6 +697,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 397327779}
     m_Modifications:
+    - target: {fileID: 657949348015508886, guid: a218591ee238e57489f83b8137c7b7c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 17.3601
+      objectReference: {fileID: 0}
+    - target: {fileID: 657949348015508886, guid: a218591ee238e57489f83b8137c7b7c4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 5.4819
+      objectReference: {fileID: 0}
+    - target: {fileID: 657949348015508886, guid: a218591ee238e57489f83b8137c7b7c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -74.57045
+      objectReference: {fileID: 0}
+    - target: {fileID: 657949348015508886, guid: a218591ee238e57489f83b8137c7b7c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 45.593193
+      objectReference: {fileID: 0}
     - target: {fileID: 3654722379579369995, guid: a218591ee238e57489f83b8137c7b7c4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
