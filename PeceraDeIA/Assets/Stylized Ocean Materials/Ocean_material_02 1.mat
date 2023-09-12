@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ocean_material_03
-  m_Shader: {fileID: 4800000, guid: 10426811ee9c7e440a395f3c8e5f65e1, type: 3}
+  m_Name: Ocean_material_02 1
+  m_Shader: {fileID: 4800000, guid: 8222502d7aa1f814fb98463f27d569a9, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -20,28 +20,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AdditionalTexture:
-        m_Texture: {fileID: 2800000, guid: 3e9621926cb7ef440a683d33de90a485, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _Addittionalfoam:
-        m_Texture: {fileID: 2800000, guid: b92bb13943100dc4daef3c023e29ca9f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 3e9621926cb7ef440a683d33de90a485, type: 3}
+        m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DepthValue:
-        m_Texture: {fileID: 2800000, guid: b3274828375765548a351a476bcdaf15, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Depthcolor:
-        m_Texture: {fileID: 2800000, guid: 78e2a2e252052be48aa5f8ceb863eb28, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -62,31 +46,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _FoamTexture:
         m_Texture: {fileID: 2800000, guid: 5f9b6fb959d19a241b3efbcaa90b5a77, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Highlight:
-        m_Texture: {fileID: 2800000, guid: 84ca0967d8e116a48bef3706d3fdc558, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Higlight:
-        m_Texture: {fileID: 2800000, guid: 3a5a96df060a5cf4a9cc0c59e13486b7, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: a4e98370bf01f364d909e62b42091cd5, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 38ab8aca4d89a4c4f93b72ac8d1e3f8e, type: 3}
+        m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise:
-        m_Texture: {fileID: 2800000, guid: 45b1622d102323f48bfb2dd3e49c3a81, type: 3}
-        m_Scale: {x: 0.1, y: 0.1}
+        m_Texture: {fileID: 2800000, guid: d12dc5b6df76c6b42844432e6b9f4005, type: 3}
+        m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -98,37 +74,32 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - PixelSnap: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EnableExternalAlpha: 0
-    - _FoamLevelDestination: 4
-    - _FoamOpacity: 0.74
-    - _FoamPower: 0.3944446
+    - _FoamLevel: 1.71
+    - _FoamLevelDestination: 2.28
+    - _FoamOpacity: 1.23
+    - _FoamPower: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intensity: 20
     - _Metallic: 0
     - _Mode: 0
-    - _Noiselevel: 0.12
+    - _Noiselevel: 0.012
     - _OcclusionStrength: 1
-    - _Opacity: 1
+    - _Opacity: 0.163
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0
     - _SrcBlend: 1
     - _UVSec: 0
-    - _WaterOrientation: 2.5
+    - _WaterDepth: 10
+    - _WaterOrientation: 1.97
     - _ZWrite: 1
-    - _node_6698: 0
     m_Colors:
-    - _Color: {r: 0, g: 0.43529415, b: 0.6156863, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColor: {r: 0.38278544, g: 0.5929483, b: 0.88235295, a: 0.34117648}
+    - _WaterColor: {r: 0.5176471, g: 0.6901961, b: 0.64705884, a: 0.12941177}
   m_BuildTextureStacks: []
