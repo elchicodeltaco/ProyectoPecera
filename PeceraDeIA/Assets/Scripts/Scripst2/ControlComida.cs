@@ -126,6 +126,17 @@ public class ControlComida : MonoBehaviour
 
     }
 
-   
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag== "Pez")
+        {
+            Debug.Log("Se ha encontrado a un pez");
+
+            Destroy(gameObject);
+        }
+        
+
+
+    }
 
 }
