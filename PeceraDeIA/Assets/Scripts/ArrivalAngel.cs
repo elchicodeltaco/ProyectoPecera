@@ -13,7 +13,7 @@ public class ArrivalAngel : SteeringBase
 
     public override Vector3 CalcularSteering()
     {
-        Comidas = GameObject.FindGameObjectWithTag("Comida");
+        Comidas = GameObject.FindGameObjectWithTag("ComidaParaAngel");
         target = Comidas.transform;
         //target = 
 

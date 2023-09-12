@@ -23,7 +23,6 @@ public class ControlComida : MonoBehaviour
     //  public GameObject prefabAsteroideMenor; //este será el objeto que se instancia cuando el primer asteroide se destrye
     public bool direccionAleatoria;
 
-    public bool EsComido;
 
     // Start is called before the first frame update
     void Start()
@@ -128,7 +127,7 @@ public class ControlComida : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag== "Pez")
+        if (collision.gameObject.tag =="pezComedorComidaEscalador")
         {
             Debug.Log("Se ha encontrado a un pez");
 

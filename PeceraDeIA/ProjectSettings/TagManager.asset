@@ -7,6 +7,8 @@ TagManager:
   - Depredadores
   - PresaDeDepredador
   - Comida
+  - pezComedorComidaEscalador
+  - ComidaParaAngel
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - Comida
   - Depredador
   - Limpiador
-  - 
-  - 
+  - ComidaPaAngel
+  - ObstaculoPared
   - 
   - 
   - 

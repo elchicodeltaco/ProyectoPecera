@@ -45,7 +45,11 @@ public class PezAngel : MonoBehaviour
                     comidaMasCercana = comida;
                 }
             }
-            this.GetComponent<ArrivalAngel>().target = comidaMasCercana.transform;
+            if(comidaMasCercana!= null)
+            {
+                this.GetComponent<ArrivalAngel>().target = comidaMasCercana.transform;
+
+            }
         }
         if (depredadorMasCercano.transform.position.magnitude - transform.position.magnitude > comidaMasCercana.transform.position.magnitude-transform.position.magnitude)
         {

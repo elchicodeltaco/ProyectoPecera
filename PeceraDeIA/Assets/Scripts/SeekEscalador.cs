@@ -59,14 +59,21 @@ public class SeekEscalador : SteeringBase
 
     public Vector3 Seek(Transform target, float velocidad)
     {
-        Vector3 direccion =
-        (target.position - transform.position).normalized;
-        Vector3 vel = direccion * velocidad;
-        Vector3 steeringForce = vel - MiRigidbody.velocity;
-        return steeringForce;
+        if(target!= null)
+        {
+            Vector3 direccion =
+            (target.position - transform.position).normalized;
+            Vector3 vel = direccion * velocidad;
+            Vector3 steeringForce = vel - MiRigidbody.velocity;
+            return steeringForce;
+        }
+        else
+        {
+            return Vector3.zero;
+        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Comida")
         {   //GameObject copia = Instantiate(ObejectToPool);
@@ -76,7 +83,7 @@ public class SeekEscalador : SteeringBase
           
 
         }
-    }
+    }*/
 
 }
 
