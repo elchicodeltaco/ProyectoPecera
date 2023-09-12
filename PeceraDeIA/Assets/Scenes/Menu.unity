@@ -875,7 +875,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1282849226}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1306465851}
+        m_TargetAssemblyTypeName: ControlDeEscenas, Assembly-CSharp
+        m_MethodName: CargarScena
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1282849226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,6 +926,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282849223}
   m_CullTransparentMesh: 1
+--- !u!1001 &1306465850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 229.32642
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 160.31941
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.0921602
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466616, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366332907953466619, guid: a15fd021dc228b3499647efd57734465, type: 3}
+      propertyPath: m_Name
+      value: Escenas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a15fd021dc228b3499647efd57734465, type: 3}
+--- !u!114 &1306465851 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1366332907953466617, guid: a15fd021dc228b3499647efd57734465, type: 3}
+  m_PrefabInstance: {fileID: 1306465850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6313a4716d3d64048b7a2b0813bc343b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1613468981
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1076,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1613468984}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1306465851}
+        m_TargetAssemblyTypeName: ControlDeEscenas, Assembly-CSharp
+        m_MethodName: CargarScena
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1613468984
 MonoBehaviour:
   m_ObjectHideFlags: 0
