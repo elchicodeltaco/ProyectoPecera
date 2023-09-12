@@ -9,6 +9,7 @@ public class ComportamientoComidaAngel : MonoBehaviour
     // Start is called before the first frame update
     public float boxLenght = 0.5f;
     private float tiempoTranscurrido = 0f;
+    public float tiempoEsperaComida = 3f;
     public void CompComida()
     {
         Collider[] comedoresAngel = Physics.OverlapSphere(transform.position, boxLenght, PezAngel);
@@ -21,7 +22,7 @@ public class ComportamientoComidaAngel : MonoBehaviour
     private void Esperar(float duracion)
     {
         tiempoTranscurrido += Time.deltaTime;
-        if (tiempoTranscurrido > duracion)
+        if (tiempoTranscurrido > tiempoEsperaComida)
         {
             Destroy(this.gameObject);
             tiempoTranscurrido = 0;
