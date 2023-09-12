@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ocean_material_03
-  m_Shader: {fileID: 4800000, guid: 15f6899ab3f86b04ab893a54e869eb1e, type: 3}
+  m_Shader: {fileID: 4800000, guid: 4616dba0fcbb2734895383d1cbbb9e5f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -104,6 +104,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Intensity: 20
     - _Metallic: 0
     - _Mode: 0
     - _Noiselevel: 0.12
@@ -112,13 +113,14 @@ Material:
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 0
     - _SrcBlend: 1
     - _UVSec: 0
     - _WaterOrientation: 2.5
     - _ZWrite: 1
     - _node_6698: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0, g: 0.43529415, b: 0.6156863, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _WaterColor: {r: 0.38278544, g: 0.5929483, b: 0.88235295, a: 0.34117648}
   m_BuildTextureStacks: []
