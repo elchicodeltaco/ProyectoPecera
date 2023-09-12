@@ -6,31 +6,33 @@ public class Alineacion : SteeringBase
 {
     public float radioAlineacion = 5f;
     public LayerMask capaAgentes;
-     
+    public float speedRotation = .5f;
+
     public override Vector3 CalcularSteering()
     {
-        Vector3 steeringForce = Vector3.zero;
-        int numeroDeVecinos = 0;
+        Vector3 steeringForce = new Vector3();
         Collider[] agentesCercanos = Physics.OverlapSphere(transform.position, radioAlineacion, capaAgentes);
 
-        foreach(Collider agente in agentesCercanos)
+        foreach (Collider obj in agentesCercanos)
         {
-          if(agente.gameObject != gameObject)
-          {
-              //Aquí debe de sumar la direccion hacia donde se dirige 
-              steeringForce += agente.transform.forward;
-
-              numeroDeVecinos++; 
-          }
+            if (obj.gameObject != gameObject)
+            {
+                steeringForce += obj.transform.forward;
+            }
         }
-
-        if(numeroDeVecinos > 0)
+        if (agentesCercanos.Length > 0)
         {
-            steeringForce /= numeroDeVecinos; //Este es el promedio
+            steeringForce /= (float)agentesCercanos.Length;
             steeringForce.Normalize();
-            //steeringForce = steeringFoce - transfom.forward;
+            //steeringForce = steeringForce - transform.forward;
         }
-
+        RotateToTarget(steeringForce);
         return steeringForce;
+    }
+    private void RotateToTarget(Vector3 direction)
+    {
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        Quaternion rotation2 = Quaternion.RotateTowards(GetComponentInChildren<MeshRenderer>().gameObject.transform.rotation, rotation, speedRotation);
+        GetComponentInChildren<MeshRenderer>().gameObject.transform.rotation = rotation2;
     }
 }

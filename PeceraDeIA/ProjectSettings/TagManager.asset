@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Depredadores
   - PresaDeDepredador
+  - Comida
   layers:
   - Default
   - TransparentFX
@@ -19,9 +20,9 @@ TagManager:
   - Refugio
   - Cardenal
   - Coral
-  - 
-  - 
-  - 
+  - Comida
+  - Depredador
+  - Limpiador
   - 
   - 
   - 

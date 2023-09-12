@@ -7,8 +7,7 @@ public class PezDepredador : MonoBehaviour
     Transform perseguido;
     Transform pezAEscapar;
 
-    public float DistanciaLimitePresa;
-    public float DistanciaLimiteDepredador;
+
 
     GameObject[] arregloPresas;
     GameObject[] arregloDepredadores;
@@ -32,7 +31,7 @@ public class PezDepredador : MonoBehaviour
                 pezAEscapar = pez.transform;
             }
         }
-        this.GetComponent<Evades>().perseguidor = pezAEscapar;
+        this.GetComponent<FleeAngel>().Target = pezAEscapar;
         this.GetComponent<Predictividad>().evader = perseguido;
 
     }

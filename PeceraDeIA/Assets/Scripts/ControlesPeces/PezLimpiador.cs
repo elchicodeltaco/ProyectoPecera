@@ -6,7 +6,6 @@ public class PezLimpiador : MonoBehaviour
 {
     private Transform targetCercano;
     public LayerMask pezSeguido;
-    public LayerMask pezLimpiador;
 
     public float boxLenght = 10f;
     public double distMasCerca = double.MaxValue;

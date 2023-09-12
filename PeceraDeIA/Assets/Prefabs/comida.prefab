@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6201114680468350093}
   - component: {fileID: 1639037778009198559}
   - component: {fileID: 5488711466518566963}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: comida
   m_TagString: Comida
   m_Icon: {fileID: 0}
@@ -147,4 +147,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 1
   direccionAleatoria: 1
-  EsComido: 0
+  EsChico: 0
